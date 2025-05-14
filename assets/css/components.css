@@ -1,0 +1,182 @@
+/* =====================================================
+   🔤 Typography & Page Structure
+===================================================== */
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+/* =====================================================
+   📝 Blog List (show-posts.php)
+===================================================== */
+
+.post-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+}
+
+.post-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.post-card .thumbnail {
+  width: 200px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0;
+  flex-shrink: 0;
+}
+
+
+.post-card .post-content {
+  flex: 1;
+}
+
+.post-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.post-card .date {
+  font-size: 0.875rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.post-card p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* =====================================================
+   🧾 Single Blog Post (post.php)
+===================================================== */
+
+.post-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.post-wrapper h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: -1rem;
+}
+
+.post-content {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.post-content img,
+.post-content video,
+.post-content iframe {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  display: block;
+}
+
+.post-content p,
+.post-content h2,
+.post-content h3,
+.post-content ul,
+.post-content ol,
+.post-content blockquote,
+.post-content figure,
+.post-content table {
+  margin: 0 0 1rem;
+  max-width: 100%;
+}
+
+.post-content table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.post-content th,
+.post-content td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+
+/* =====================================================
+   💼 Resume / WordPress Import Styles (optional)
+===================================================== */
+
+.wpnbha article {
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+}
+
+
+/* =====================================================
+   ⌨️ Typewriter Animation
+===================================================== */
+
+#typewriter {
+  font-family: monospace;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

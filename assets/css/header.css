@@ -1,0 +1,116 @@
+/* Site Navigation */
+#site-nav ul {
+  list-style: none;
+  padding: 0; /* Remove extra padding around the list */
+  margin: 0; /* Remove extra margin around the list */
+}
+
+#site-nav ul li {
+  margin: 0; /* Remove extra margin between list items */
+  padding: 0; /* Ensure no padding is applied to the list items */
+}
+
+#site-nav ul li a {
+  display: block;
+  line-height: 1.2; /* Reduce line height to minimize vertical spacing */
+  font-weight: 500;
+  color: #363737; /* Default text color */
+  font-size: 120%;
+  padding: 4px 10px; /* Reduce padding to minimize spacing */
+  border-radius: 5px;
+  transition: color 0.3s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+#site-nav ul li a:hover,
+#site-nav ul li a:focus {
+  color: #ff69b4; /* Pink text on hover */
+}
+
+#site-nav ul li a.active {
+  color: #ff69b4; /* Pink text for the active link */
+}
+
+#site-nav ul li.current-menu-item a,
+#site-nav ul li.current_page_item a {
+  color: #000000 !important;
+}
+
+.site-branding {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* spacing between image and text */
+  text-decoration: none;
+  color: inherit;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.site-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image scales properly */
+}
+
+.site-title {
+  font-size: 1.8rem;
+  margin: 0;
+  font-family: 'Georgia', serif;
+}
+
+
+/* Site Title */
+#site-title h1 a {
+  display: inline-block;
+  background: #161616;
+  padding: 8px 8px 8px 12px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 100%;
+}
+
+.tagline {
+  white-space: nowrap;
+  font-size: 0.9rem;
+  margin-top: -8px; 
+  margin-bottom: 16px; 
+  text-align: center;
+  color: #555; 
+}
+
+
+/* Social Icons */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px; /* Slightly reduce spacing between icons */
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* Remove underline */
+  color: #000; /* Default icon color */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+  color: #ff69b4; /* Pink icon color on hover */
+}
+
+.social-icons a.active {
+  color: #ff69b4; /* Pink icon color when active */
+}
+
+.social-icons a i {
+  font-size: 1.8rem; /* Adjust icon size */
+}
+
+

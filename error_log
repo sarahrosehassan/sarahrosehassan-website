@@ -1,0 +1,336 @@
+[06-May-2025 15:11:37 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[06-May-2025 16:06:41 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[06-May-2025 16:06:44 UTC] PHP Warning:  Undefined array key "name" in /home/sarapnlc/public_html/contact.php on line 70
+[06-May-2025 16:06:44 UTC] PHP Warning:  Undefined array key "email" in /home/sarapnlc/public_html/contact.php on line 71
+[06-May-2025 16:06:44 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[07-May-2025 08:49:30 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[07-May-2025 08:52:11 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[07-May-2025 08:52:13 UTC] PHP Warning:  Undefined array key "name" in /home/sarapnlc/public_html/contact.php on line 70
+[07-May-2025 08:52:13 UTC] PHP Warning:  Undefined array key "email" in /home/sarapnlc/public_html/contact.php on line 71
+[07-May-2025 08:52:13 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[07-May-2025 13:06:02 UTC] PHP Warning:  Undefined array key "title" in /home/sarapnlc/public_html/includes/header.php on line 37
+[07-May-2025 19:30:58 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/sarapnlc/public_html/includes/load-posts.php:4
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/load-posts.php(4): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/get-latest-posts.php(5): load_blog_posts()
+#2 /home/sarapnlc/public_html/index.php(8): include('/home/sarapnlc/...')
+#3 {main}
+  thrown in /home/sarapnlc/public_html/includes/load-posts.php on line 4
+[07-May-2025 19:30:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/sarapnlc/public_html/includes/load-posts.php:4
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/load-posts.php(4): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/get-latest-posts.php(5): load_blog_posts()
+#2 /home/sarapnlc/public_html/index.php(8): include('/home/sarapnlc/...')
+#3 {main}
+  thrown in /home/sarapnlc/public_html/includes/load-posts.php on line 4
+[07-May-2025 19:32:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/sarapnlc/public_html/includes/load-posts.php:4
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/load-posts.php(4): mysqli->__construct()
+#1 /home/sarapnlc/public_html/show-posts.php(9): load_blog_posts()
+#2 {main}
+  thrown in /home/sarapnlc/public_html/includes/load-posts.php on line 4
+[07-May-2025 20:15:53 UTC] PHP Warning:  Undefined array key "title" in /home/sarapnlc/public_html/includes/header.php on line 37
+[07-May-2025 20:49:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/show-posts.php(6): include('/home/sarapnlc/...')
+#3 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 20:49:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/show-posts.php(6): include('/home/sarapnlc/...')
+#3 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 20:49:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/includes/get-latest-posts.php(2): include('/home/sarapnlc/...')
+#3 /home/sarapnlc/public_html/index.php(8): include('/home/sarapnlc/...')
+#4 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 20:51:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/admin-blog-posts.php(2): include('/home/sarapnlc/...')
+#2 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 20:51:24 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/admin-blog-posts.php(2): include('/home/sarapnlc/...')
+#2 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 20:51:25 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/admin-blog-posts.php(2): include('/home/sarapnlc/...')
+#2 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 20:53:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/includes/get-latest-posts.php(2): include('/home/sarapnlc/...')
+#3 /home/sarapnlc/public_html/index.php(8): include('/home/sarapnlc/...')
+#4 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 20:54:34 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/admin-blog-posts.php(5): include('/home/sarapnlc/...')
+#2 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 20:58:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/includes/get-latest-posts.php(2): include('/home/sarapnlc/...')
+#3 /home/sarapnlc/public_html/index.php(8): include('/home/sarapnlc/...')
+#4 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 20:58:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/test-db.php:10
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(10): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 10
+[07-May-2025 21:05:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/test-db.php:10
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(10): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 10
+[07-May-2025 21:05:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/test-db.php:10
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(10): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 10
+[07-May-2025 21:05:24 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'sarapnlc_user'@'localhost' to database 'saranplc_website_db' in /home/sarapnlc/public_html/test-db.php:10
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(10): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 10
+[07-May-2025 21:07:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saraplnc_user'@'localhost' (using password: YES) in /home/sarapnlc/public_html/test-db.php:10
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(10): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 10
+[07-May-2025 21:08:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/includes/get-latest-posts.php(2): include('/home/sarapnlc/...')
+#3 /home/sarapnlc/public_html/index.php(8): include('/home/sarapnlc/...')
+#4 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 21:09:27 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saraplnc_user'@'localhost' (using password: YES) in /home/sarapnlc/public_html/test-db.php:10
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(10): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 10
+[07-May-2025 21:09:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/admin-blog-posts.php(5): include('/home/sarapnlc/...')
+#2 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 21:09:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saraplnc_user'@'localhost' (using password: YES) in /home/sarapnlc/public_html/test-db.php:10
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(10): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 10
+[07-May-2025 21:10:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'sarapnlc_user'@'localhost' to database 'saranplc_website_db' in /home/sarapnlc/public_html/test-db.php:10
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(10): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 10
+[07-May-2025 21:12:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'sarapnlc_user'@'localhost' to database 'sarapnlc_website_db' in /home/sarapnlc/public_html/test-db.php:10
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(10): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 10
+[07-May-2025 21:12:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'sarapnlc_user'@'localhost' to database 'sarapnlc_website_db' in /home/sarapnlc/public_html/test-db.php:10
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(10): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 10
+[07-May-2025 21:12:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'sarapnlc_user'@'localhost' to database 'sarapnlc_website_db' in /home/sarapnlc/public_html/test-db.php:10
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(10): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 10
+[07-May-2025 21:12:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'sarapnlc_user'@'localhost' to database 'sarapnlc_website_db' in /home/sarapnlc/public_html/test-db.php:10
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(10): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 10
+[07-May-2025 21:12:41 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'sarapnlc_user'@'localhost' to database 'sarapnlc_website_db' in /home/sarapnlc/public_html/test-db.php:10
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(10): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 10
+[07-May-2025 21:17:34 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'sarapnlc_user'@'server113.web-hosting.com' to database 'sarapnlc_website_db' in /home/sarapnlc/public_html/test-db.php:10
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(10): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 10
+[07-May-2025 21:25:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/sarapnlc/public_html/test-db.php:11
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(11): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 11
+[07-May-2025 21:28:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/sarapnlc/public_html/test-db.php:11
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(11): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 11
+[07-May-2025 21:28:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/sarapnlc/public_html/test-db.php:11
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(11): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 11
+[07-May-2025 21:32:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/includes/get-latest-posts.php(2): include('/home/sarapnlc/...')
+#3 /home/sarapnlc/public_html/index.php(8): include('/home/sarapnlc/...')
+#4 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 21:33:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/sarapnlc/public_html/test-db.php:11
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(11): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 11
+[07-May-2025 21:33:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/sarapnlc/public_html/test-db.php:11
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(11): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 11
+[07-May-2025 21:42:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/includes/get-latest-posts.php(2): include('/home/sarapnlc/...')
+#3 /home/sarapnlc/public_html/index.php(8): include('/home/sarapnlc/...')
+#4 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 22:10:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/includes/get-latest-posts.php(2): include('/home/sarapnlc/...')
+#3 /home/sarapnlc/public_html/index.php(8): include('/home/sarapnlc/...')
+#4 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 22:19:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/sarapnlc/public_html/test-db.php:11
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(11): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 11
+[07-May-2025 22:24:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/includes/get-latest-posts.php(2): include('/home/sarapnlc/...')
+#3 /home/sarapnlc/public_html/index.php(8): include('/home/sarapnlc/...')
+#4 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 22:28:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/sarapnlc/public_html/test-db.php:11
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(11): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 11
+[07-May-2025 22:28:25 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/sarapnlc/public_html/test-db.php:11
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(11): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 11
+[07-May-2025 22:37:13 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/includes/get-latest-posts.php(2): include('/home/sarapnlc/...')
+#3 /home/sarapnlc/public_html/index.php(8): include('/home/sarapnlc/...')
+#4 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 22:37:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/show-posts.php(6): include('/home/sarapnlc/...')
+#3 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 22:37:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/show-posts.php(6): include('/home/sarapnlc/...')
+#3 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 22:39:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/sarapnlc/public_html/test-db.php:11
+Stack trace:
+#0 /home/sarapnlc/public_html/test-db.php(11): mysqli->__construct()
+#1 {main}
+  thrown in /home/sarapnlc/public_html/test-db.php on line 11
+[07-May-2025 22:41:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/show-posts.php(6): include('/home/sarapnlc/...')
+#3 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 22:52:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'saranplc'@'localhost' (using password: YES) in /home/sarapnlc/public_html/includes/db.php:8
+Stack trace:
+#0 /home/sarapnlc/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/sarapnlc/public_html/includes/load-posts.php(2): include('/home/sarapnlc/...')
+#2 /home/sarapnlc/public_html/includes/get-latest-posts.php(2): include('/home/sarapnlc/...')
+#3 /home/sarapnlc/public_html/index.php(8): include('/home/sarapnlc/...')
+#4 {main}
+  thrown in /home/sarapnlc/public_html/includes/db.php on line 8
+[07-May-2025 23:19:00 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[07-May-2025 23:19:02 UTC] PHP Warning:  Undefined array key "name" in /home/sarapnlc/public_html/contact.php on line 70
+[07-May-2025 23:19:02 UTC] PHP Warning:  Undefined array key "email" in /home/sarapnlc/public_html/contact.php on line 71
+[07-May-2025 23:19:02 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[09-May-2025 02:47:41 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[09-May-2025 02:47:43 UTC] PHP Warning:  Undefined array key "name" in /home/sarapnlc/public_html/contact.php on line 70
+[09-May-2025 02:47:43 UTC] PHP Warning:  Undefined array key "email" in /home/sarapnlc/public_html/contact.php on line 71
+[09-May-2025 02:47:43 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[09-May-2025 08:02:10 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[09-May-2025 08:02:11 UTC] PHP Warning:  Undefined array key "name" in /home/sarapnlc/public_html/contact.php on line 70
+[09-May-2025 08:02:11 UTC] PHP Warning:  Undefined array key "email" in /home/sarapnlc/public_html/contact.php on line 71
+[09-May-2025 08:02:11 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[09-May-2025 08:46:32 UTC] PHP Warning:  Undefined array key "title" in /home/sarapnlc/public_html/includes/header.php on line 37
+[10-May-2025 08:25:11 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[10-May-2025 08:25:14 UTC] PHP Warning:  Undefined array key "name" in /home/sarapnlc/public_html/contact.php on line 70
+[10-May-2025 08:25:14 UTC] PHP Warning:  Undefined array key "email" in /home/sarapnlc/public_html/contact.php on line 71
+[10-May-2025 08:25:14 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[10-May-2025 14:02:18 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[10-May-2025 14:02:20 UTC] PHP Warning:  Undefined array key "name" in /home/sarapnlc/public_html/contact.php on line 70
+[10-May-2025 14:02:20 UTC] PHP Warning:  Undefined array key "email" in /home/sarapnlc/public_html/contact.php on line 71
+[10-May-2025 14:02:20 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[11-May-2025 03:07:40 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[11-May-2025 03:07:42 UTC] PHP Warning:  Undefined array key "name" in /home/sarapnlc/public_html/contact.php on line 70
+[11-May-2025 03:07:42 UTC] PHP Warning:  Undefined array key "email" in /home/sarapnlc/public_html/contact.php on line 71
+[11-May-2025 03:07:42 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[11-May-2025 07:48:06 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[11-May-2025 07:48:07 UTC] PHP Warning:  Undefined array key "name" in /home/sarapnlc/public_html/contact.php on line 70
+[11-May-2025 07:48:07 UTC] PHP Warning:  Undefined array key "email" in /home/sarapnlc/public_html/contact.php on line 71
+[11-May-2025 07:48:07 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[12-May-2025 07:42:24 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[12-May-2025 07:42:27 UTC] PHP Warning:  Undefined array key "name" in /home/sarapnlc/public_html/contact.php on line 70
+[12-May-2025 07:42:27 UTC] PHP Warning:  Undefined array key "email" in /home/sarapnlc/public_html/contact.php on line 71
+[12-May-2025 07:42:27 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[13-May-2025 03:50:56 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[13-May-2025 03:50:57 UTC] PHP Warning:  Undefined array key "name" in /home/sarapnlc/public_html/contact.php on line 70
+[13-May-2025 03:50:57 UTC] PHP Warning:  Undefined array key "email" in /home/sarapnlc/public_html/contact.php on line 71
+[13-May-2025 03:50:57 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[13-May-2025 03:55:24 UTC] PHP Warning:  Undefined array key "name" in /home/sarapnlc/public_html/contact.php on line 70
+[13-May-2025 03:55:24 UTC] PHP Warning:  Undefined array key "email" in /home/sarapnlc/public_html/contact.php on line 71
+[13-May-2025 03:55:24 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[14-May-2025 11:55:27 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72
+[14-May-2025 11:55:30 UTC] PHP Warning:  Undefined array key "name" in /home/sarapnlc/public_html/contact.php on line 70
+[14-May-2025 11:55:30 UTC] PHP Warning:  Undefined array key "email" in /home/sarapnlc/public_html/contact.php on line 71
+[14-May-2025 11:55:30 UTC] PHP Warning:  Undefined array key "message" in /home/sarapnlc/public_html/contact.php on line 72

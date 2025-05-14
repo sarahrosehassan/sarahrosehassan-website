@@ -1,0 +1,76 @@
+/* ------------------------------------
+   Tablet and below (max-width: 768px)
+------------------------------------ */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    z-index: 10;
+  }
+
+  .sidebar-inner {
+    align-items: center;
+  }
+
+  .site-title {
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+    margin-top: -0.25rem;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 0.5rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .content {
+    padding: 1.5rem;
+    margin-left: 0; /* Reset margin from desktop */
+  }
+
+  .post-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .post-card img.thumbnail {
+    width: 90%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .post-content {
+    text-align: center;
+  }
+}
+
+
+/* ------------------------------------
+   Desktop and up (min-width: 1024px)
+------------------------------------ */
+@media (min-width: 1024px) {
+  .content {
+    margin-left: 240px; /* accommodates fixed sidebar width */
+  }
+}

@@ -1,0 +1,30 @@
+/* Footer area */
+#colophon, #footer-sidebar-wrap {
+  padding: 50px 0;
+  border-top: 1px solid #ccc;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Social media icons */
+.social-icons {
+  display: flex;
+  margin-left: -14px;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  transition: filter .3s ease, opacity .3s ease;
+}
+
+.social-icon:hover {
+  filter: grayscale(100%) brightness(1.2);
+  opacity: .5;
+}

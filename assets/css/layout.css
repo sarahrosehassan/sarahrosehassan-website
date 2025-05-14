@@ -1,0 +1,44 @@
+/* ------------------------------------
+   Layout containers
+------------------------------------ */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* ------------------------------------
+   Sidebar (desktop)
+------------------------------------ */
+.sidebar {
+  width: 240px;
+  background: #fafafa;
+  border-right: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1000;
+}
+
+/* Inner layout for sidebar content */
+.sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 40px 24px 40px 20px; /* top right bottom left */
+}
+
+/* ------------------------------------
+   Main content (desktop)
+------------------------------------ */
+.content {
+  margin-left: 240px; /* offset content to the right of fixed sidebar */
+  padding: 2rem;
+  max-width: 720px;
+}
+
+  
+
+  
+  
