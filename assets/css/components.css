@@ -158,6 +158,64 @@ h2 {
 
 
 /* =====================================================
+   👋 About Page Styles
+===================================================== */
+
+.about-page .about-columns {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.about-page .about-image {
+  flex: 0 0 300px;
+}
+
+.about-page .about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-page .about-text {
+  flex: 1;
+}
+
+.about-page .about-text h4 {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.about-page .about-text a {
+  color: #007cba;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.about-page .about-text a:hover {
+  border-bottom-color: #007cba;
+}
+
+/* Responsive design for About page */
+@media (max-width: 768px) {
+  .about-page .about-columns {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-page .about-image {
+    flex: none;
+    margin: 0 auto;
+    max-width: 250px;
+  }
+}
+
+
+/* =====================================================
    ⌨️ Typewriter Animation
 ===================================================== */
 

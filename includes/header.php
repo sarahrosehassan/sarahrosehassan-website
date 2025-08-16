@@ -1,6 +1,6 @@
 <?php
 $pageClass = '';
-if (isset($_GET['title']) && $_GET['title'] === 'About') {
+if (basename($_SERVER['PHP_SELF']) === 'about.php') {
   $pageClass = 'about-page';
 }
 ?>
@@ -34,7 +34,7 @@ if (isset($_GET['title']) && $_GET['title'] === 'About') {
         <ul>
           <li><a href="show-posts.php" class="<?= basename($_SERVER['PHP_SELF']) == 'show-posts.php' ? 'active' : '' ?>">Blog</a></li>
           <li><a href="projects.php" class="<?= basename($_SERVER['PHP_SELF']) == 'projects.php' ? 'active' : '' ?>">Projects</a></li>
-          <li><a href="post.php?title=About" class="<?= basename($_SERVER['PHP_SELF']) == 'post.php' && $_GET['title'] === 'About' ? 'active' : '' ?>">About</a></li>
+          <li><a href="about.php" class="<?= basename($_SERVER['PHP_SELF']) == 'about.php' ? 'active' : '' ?>">About</a></li>
           <li><a href="resume.php" class="<?= basename($_SERVER['PHP_SELF']) == 'resume.php' ? 'active' : '' ?>">Resume</a></li>
           <li><a href="contact.php" class="<?= basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'active' : '' ?>">Contact</a></li>
         </ul>

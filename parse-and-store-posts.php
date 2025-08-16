@@ -1,6 +1,6 @@
 <?php
 // Database connection
-$conn = new mysqli("localhost", "root", "", "sarahrosehassan_db");
+$conn = new mysqli("localhost", "saranplc", "3MPqX6SzZCDp7je@", "saranplc_website_db");
 
 // Check connection
 if ($conn->connect_error) {
