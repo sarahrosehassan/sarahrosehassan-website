@@ -15,7 +15,7 @@
             <div class="wp-block-column about-text">
                 <h4 class="wp-block-heading">👋 Hello!</h4>
                 
-                <h4 class="wp-block-heading">🇨🇦 I'm Sarah Rose, a software engineer and computer science graduate from Toronto Metropolitan University</h4>
+                <h4 class="wp-block-heading">🇨🇦 I'm Sarah Rose, computer science student from Toronto Metropolitan University</h4>
                 
                 <h4 class="wp-block-heading">💻 Professionally, I'm a software engineer who makes <a href="https://github.com/sarahrosehassan" target="_blank" rel="noreferrer noopener">software projects</a></h4>
                 
