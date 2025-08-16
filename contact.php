@@ -75,6 +75,17 @@
       width: 100px;
       margin-bottom: 0;
     }
+    
+    .whatsapp-link {
+      color: #25D366;
+      font-weight: bold;
+    }
+    
+    .whatsapp-link:hover {
+      color: #128C7E;
+    }
+      margin-bottom: 0;
+    }
   </style>
 </head>
 <body>
@@ -82,8 +93,9 @@
     <h1>Contact Me</h1>
     <p>
       Have a question, collaboration idea, or just want to say hi?  
-      Use the form below or email me at <a href="mailto:hello@sarahrosehassan.com">hello@sarahrosehassan.com</a> for casual inquiries or personal messages.<br>
-      For software engineering opportunities, recruitment, or business collaborations, please email <a href="mailto:contact@sarahrosehassan.com">contact@sarahrosehassan.com</a>.
+      Use the form below or email me at <a href="mailto:contact@sarahrosehassan.com">contact@sarahrosehassan.com</a> for any inquiries.<br><br>
+      
+      For urgent matters, you can also reach me via WhatsApp Business at <a href="https://wa.me/16474744541" target="_blank" class="whatsapp-link">+1 (647) 474-4541</a>.
     </p>
 
 
@@ -139,7 +151,7 @@
           if (isSpamContent($message, $name, $email)) {
             echo "<div class='error'>Your message appears to contain spam content. Please revise and try again.</div>";
           } else {
-            $to = "hello@sarahrosehassan.com";
+            $to = "contact@sarahrosehassan.com";
             $subject = "New Contact Form Submission from $name";
             $body = "Name: $name\nEmail: $email\n\nMessage:\n$message\n\nSubmitted from IP: " . $_SERVER['REMOTE_ADDR'];
             $headers = "From: Sarah Rose Website <sarapnlc@server113.web-hosting.com>\r\n";
