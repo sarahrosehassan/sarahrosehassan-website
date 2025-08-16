@@ -53,6 +53,28 @@
     }
     a { color: #333; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    
+    /* Honeypot field - hidden from users but visible to bots */
+    .honeypot { 
+      position: absolute; 
+      left: -9999px; 
+      width: 1px; 
+      height: 1px; 
+      overflow: hidden; 
+    }
+    
+    .captcha {
+      background: #f9f9f9;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+    }
+    
+    .captcha input {
+      width: 100px;
+      margin-bottom: 0;
+    }
   </style>
 </head>
 <body>
@@ -66,29 +88,85 @@
 
 
     <?php
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-      $name = htmlspecialchars(trim($_POST['name']));
-      $email = htmlspecialchars(trim($_POST['email']));
-      $message = htmlspecialchars(trim($_POST['message']));
-
-      if ($name && $email && $message) {
-        $to = "hello@sarahrosehassan.com";
-        $subject = "New Contact Form Submission from $name";
-        $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
-        $headers = "From: Sarah Rose Website <sarapnlc@server113.web-hosting.com>\r\n";
-        $headers .= "Reply-To: $email\r\n";
-        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-
-
-        if (mail($to, $subject, $body, $headers)) {
-            echo "<div class='success'>Thank you, $name! Your message has been sent.</div>";
-        } else {
-            echo "<div class='error'>Sorry, your message could not be sent. Please try again later.</div>";
+    session_start();
+    
+    // Function to check if submission is too frequent
+    function checkRateLimit() {
+      $lastSubmission = $_SESSION['last_submission'] ?? 0;
+      $currentTime = time();
+      return ($currentTime - $lastSubmission) > 30; // 30 seconds between submissions
+    }
+    
+    // Function to validate email content for spam patterns
+    function isSpamContent($message, $name, $email) {
+      $spamKeywords = ['seo', 'marketing', 'casino', 'loan', 'viagra', 'pharmacy', 'bitcoin', 'crypto', 'investment', 'business opportunity'];
+      $message_lower = strtolower($message . ' ' . $name);
+      
+      foreach ($spamKeywords as $keyword) {
+        if (strpos($message_lower, $keyword) !== false) {
+          return true;
         }
+      }
+      
+      // Check for excessive links
+      if (substr_count($message, 'http') > 2) {
+        return true;
+      }
+      
+      return false;
+    }
+    
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      // Check honeypot field
+      if (!empty($_POST['website'])) {
+        // Bot detected - silently fail
+        echo "<div class='success'>Thank you! Your message has been sent.</div>";
+        exit;
+      }
+      
+      // Check rate limiting
+      if (!checkRateLimit()) {
+        echo "<div class='error'>Please wait at least 30 seconds between submissions.</div>";
       } else {
-        echo "<div class='error'>Please fill out all fields.</div>";
+        $name = htmlspecialchars(trim($_POST['name']));
+        $email = htmlspecialchars(trim($_POST['email']));
+        $message = htmlspecialchars(trim($_POST['message']));
+        $captcha_answer = $_POST['captcha'] ?? '';
+        $captcha_expected = $_SESSION['captcha_answer'] ?? '';
+
+        if ($name && $email && $message && $captcha_answer == $captcha_expected) {
+          // Check for spam content
+          if (isSpamContent($message, $name, $email)) {
+            echo "<div class='error'>Your message appears to contain spam content. Please revise and try again.</div>";
+          } else {
+            $to = "hello@sarahrosehassan.com";
+            $subject = "New Contact Form Submission from $name";
+            $body = "Name: $name\nEmail: $email\n\nMessage:\n$message\n\nSubmitted from IP: " . $_SERVER['REMOTE_ADDR'];
+            $headers = "From: Sarah Rose Website <sarapnlc@server113.web-hosting.com>\r\n";
+            $headers .= "Reply-To: $email\r\n";
+            $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+            if (mail($to, $subject, $body, $headers)) {
+                $_SESSION['last_submission'] = time();
+                echo "<div class='success'>Thank you, $name! Your message has been sent.</div>";
+            } else {
+                echo "<div class='error'>Sorry, your message could not be sent. Please try again later.</div>";
+            }
+          }
+        } else {
+          if ($captcha_answer != $captcha_expected) {
+            echo "<div class='error'>Please solve the math problem correctly.</div>";
+          } else {
+            echo "<div class='error'>Please fill out all fields.</div>";
+          }
+        }
       }
     }
+    
+    // Generate simple math captcha
+    $num1 = rand(1, 10);
+    $num2 = rand(1, 10);
+    $_SESSION['captcha_answer'] = $num1 + $num2;
     ?>
 
     <form action="" method="POST">
@@ -100,6 +178,18 @@
 
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="6" required></textarea>
+
+      <!-- Honeypot field - hidden from users but visible to bots -->
+      <div class="honeypot">
+        <label for="website">Website (leave blank)</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+      </div>
+
+      <!-- Simple math captcha -->
+      <div class="captcha">
+        <label for="captcha">Spam protection: What is <?= $num1 ?> + <?= $num2 ?>?</label>
+        <input type="number" id="captcha" name="captcha" required>
+      </div>
 
       <button type="submit">Send Message</button>
     </form>
