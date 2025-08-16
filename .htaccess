@@ -1,0 +1,5 @@
+# Make the homepage load automatically
+DirectoryIndex index.php index.html
+
+# Turn off directory listing
+Options -Indexes
