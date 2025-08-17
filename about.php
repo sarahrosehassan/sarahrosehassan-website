@@ -15,11 +15,11 @@
             <div class="wp-block-column about-text">
                 <h4 class="wp-block-heading">👋 Hello!</h4>
                 
-                <h4 class="wp-block-heading">🇨🇦 I'm Sarah Rose, computer science student from Toronto Metropolitan University</h4>
+                <h4 class="wp-block-heading">🇨🇦 I'm Sarah Rose, a computer science student from Toronto Metropolitan University (TMU)</h4>
                 
                 <h4 class="wp-block-heading">💻 Professionally, I'm a software engineer who makes <a href="https://github.com/sarahrosehassan" target="_blank" rel="noreferrer noopener">software projects</a></h4>
                 
-                <h4 class="wp-block-heading">📹 I vlog about my life and about tech on <a href="https://www.youtube.com/@sarahrosehassan" target="_blank" rel="noreferrer noopener">YouTube</a></h4>
+                <h4 class="wp-block-heading">📹 I vlog about my life and talk about tech on <a href="https://www.youtube.com/@sarahrosehassan" target="_blank" rel="noreferrer noopener">YouTube</a></h4>
                 
                 <h4 class="wp-block-heading">🎹 As a hobby, I like to <a href="http://youtube.com/@_rah" target="_blank" rel="noreferrer noopener">make music</a> 🎵</h4>
                 
