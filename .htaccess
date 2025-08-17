@@ -3,3 +3,14 @@ DirectoryIndex index.php index.html
 
 # Turn off directory listing
 Options -Indexes
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Force HTTPS (optional but recommended)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Handle missing files gracefully
+ErrorDocument 403 /index.php
+ErrorDocument 404 /index.php
