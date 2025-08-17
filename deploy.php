@@ -14,12 +14,13 @@ $sig_header = $_SERVER['HTTP_X_HUB_SIGNATURE_256'] ?? '';
 //     exit('Unauthorized');
 // }
 
-// Deployment configuration
-$repo_path = '/home/sarapnlc/repositories/sarahrosehassan-website-legacy';
-$deploy_path = '/home/sarapnlc/public_html/old.sarahrosehassan.com';
+// Deployment configuration - Updated for Bluehost
+$repo_url = 'https://github.com/sarahrosehassan/sarahrosehassan-website-legacy.git';
+$deploy_path = $_SERVER['HOME'] . '/public_html/old.sarahrosehassan.com';
+$temp_path = $_SERVER['HOME'] . '/temp_deploy';
 
 // Log deployment
-$log_file = '/home/sarapnlc/deploy.log';
+$log_file = $_SERVER['HOME'] . '/deploy.log';
 $timestamp = date('Y-m-d H:i:s');
 
 function log_message($message) {
@@ -30,21 +31,32 @@ function log_message($message) {
 log_message("Deployment started");
 
 try {
-    // Pull latest changes
-    $output = [];
-    $return_code = 0;
-    
-    // Change to repository directory and pull
-    exec("cd $repo_path && git pull origin main 2>&1", $output, $return_code);
-    
-    if ($return_code !== 0) {
-        throw new Exception("Git pull failed: " . implode("\n", $output));
+    // Create temp directory for cloning
+    if (is_dir($temp_path)) {
+        exec("rm -rf $temp_path");
     }
     
-    log_message("Git pull successful");
+    log_message("Cloning repository to temp directory");
     
-    // Copy files to deployment directory
-    exec("rsync -av --delete --exclude='.git' --exclude='deploy.php' --exclude='.cpanel.yml' $repo_path/ $deploy_path/ 2>&1", $output, $return_code);
+    // Clone the repository
+    $output = [];
+    $return_code = 0;
+    exec("git clone $repo_url $temp_path 2>&1", $output, $return_code);
+    
+    if ($return_code !== 0) {
+        throw new Exception("Git clone failed: " . implode("\n", $output));
+    }
+    
+    log_message("Repository cloned successfully");
+    
+    // Create deployment directory if it doesn't exist
+    if (!is_dir($deploy_path)) {
+        mkdir($deploy_path, 0755, true);
+        log_message("Created deployment directory: $deploy_path");
+    }
+    
+    // Copy files to deployment directory (exclude git and deployment files)
+    exec("rsync -av --delete --exclude='.git' --exclude='deploy.php' --exclude='.cpanel.yml' --exclude='README.md' $temp_path/ $deploy_path/ 2>&1", $output, $return_code);
     
     if ($return_code !== 0) {
         throw new Exception("File copy failed: " . implode("\n", $output));
@@ -52,16 +64,25 @@ try {
     
     log_message("Files copied successfully");
     
+    // Clean up temp directory
+    exec("rm -rf $temp_path");
+    log_message("Temp directory cleaned up");
+    
     // Set correct permissions
     exec("find $deploy_path -type f -exec chmod 644 {} \;");
     exec("find $deploy_path -type d -exec chmod 755 {} \;");
     
     log_message("Permissions set");
     
-    echo "Deployment successful!";
+    echo "Deployment successful! Website updated at old.sarahrosehassan.com";
     log_message("Deployment completed successfully");
     
 } catch (Exception $e) {
+    // Clean up on error
+    if (is_dir($temp_path)) {
+        exec("rm -rf $temp_path");
+    }
+    
     echo "Deployment failed: " . $e->getMessage();
     log_message("Deployment failed: " . $e->getMessage());
     http_response_code(500);
