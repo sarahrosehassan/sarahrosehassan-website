@@ -1,4 +1,7 @@
-<?php include("includes/header.php"); ?>
+<?php
+session_start();
+include("includes/header.php"); 
+?>
 <?php
 // Contact Page – Sarah Rose Hassan
 ?>
@@ -100,8 +103,6 @@
 
 
     <?php
-    session_start();
-    
     // Function to check if submission is too frequent
     function checkRateLimit() {
       $lastSubmission = $_SESSION['last_submission'] ?? 0;
