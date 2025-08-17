@@ -2,6 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/sarapnlc/public_html/old.sarahrosehassan.com
+    - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp -R * $DEPLOYPATH
-    - /bin/find $DEPLOYPATH -type f -exec chmod 644 {} \;
-    - /bin/find $DEPLOYPATH -type d -exec chmod 755 {} \;
+    - /bin/chmod -R 755 $DEPLOYPATH
