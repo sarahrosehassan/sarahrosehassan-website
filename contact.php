@@ -87,6 +87,13 @@ include("includes/header.php");
     .whatsapp-link:hover {
       color: #128C7E;
     }
+    
+    #whatsapp-contact {
+      color: #25D366;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: underline;
+    }
       margin-bottom: 0;
     }
   </style>
@@ -98,8 +105,24 @@ include("includes/header.php");
       Have a question, collaboration idea, or just want to say hi?  
       Use the form below or email me at <a href="mailto:contact@sarahrosehassan.com">contact@sarahrosehassan.com</a> for any inquiries.<br><br>
       
-      For urgent matters, you can also reach me via WhatsApp Business at <a href="https://wa.me/16474744541" target="_blank" class="whatsapp-link">+1 (647) 474-4541</a>.
+      For urgent matters, you can also reach me via WhatsApp Business at <span id="whatsapp-contact">click to reveal</span>.
     </p>
+
+    <script>
+    // Obfuscated phone number to prevent scraping
+    document.addEventListener('DOMContentLoaded', function() {
+      const phoneElement = document.getElementById('whatsapp-contact');
+      
+      // Base64 encoded phone data to prevent scraping
+      const encodedData = 'aHR0cHM6Ly93YS5tZS8xNjQ3NDc0NDU0MQ=='; // https://wa.me/16474744541
+      const phoneUrl = atob(encodedData);
+      const displayNumber = '+1 (647) 474-4541';
+      
+      phoneElement.innerHTML = '<a href="' + phoneUrl + '" target="_blank" class="whatsapp-link">' + 
+                               displayNumber + '</a>';
+      phoneElement.style.cursor = 'pointer';
+    });
+    </script>
 
 
     <?php
