@@ -1,4 +1,5 @@
 ---
 deployment:
   tasks:
+    - /bin/mkdir -p $HOME/public_html/old.sarahrosehassan.com
     - /bin/cp -R * $HOME/public_html/old.sarahrosehassan.com/
