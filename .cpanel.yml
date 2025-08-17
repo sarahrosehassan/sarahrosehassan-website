@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/sarapnlc/public_html/old.sarahrosehassan.com
+    - export DEPLOYPATH=$HOME/public_html/old.sarahrosehassan.com
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp -R * $DEPLOYPATH/
     - /bin/cp -R .htaccess $DEPLOYPATH/ 2>/dev/null || true
